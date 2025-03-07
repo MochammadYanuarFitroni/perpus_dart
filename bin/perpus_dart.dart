@@ -1,5 +1,8 @@
-import 'package:perpus_dart/perpus_dart.dart' as perpus_dart;
+import 'dart:io';
 
 void main(List<String> arguments) {
-  print('Hello world: ${perpus_dart.calculate()}!');
+  stdout.write('Username: ');
+  String username = stdin.readLineSync()!;
+  stdout.write('Password: ');
+  String password = stdin.readLineSync()!;
 }
