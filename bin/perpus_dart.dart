@@ -1,8 +1,11 @@
 import 'dart:io';
 
-void main(List<String> arguments) {
-  stdout.write('Username: ');
-  String username = stdin.readLineSync()!;
-  stdout.write('Password: ');
-  String password = stdin.readLineSync()!;
+import 'package:perpus_dart/database/database.dart';
+
+void main() async{
+  var conn = await database.connect();
+  print("Connected to database!");
+  print(conn);
+
+  await conn.close();
 }
