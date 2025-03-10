@@ -9,8 +9,8 @@ class Ebook extends LibraryItem{
         required String title,
         required String author,
         required String isbn,
-        required this.fileSize,
-        BookStatus status = BookStatus.tersedia})
+        BookStatus status = BookStatus.tersedia,
+        required this.fileSize,})
       : super(id: id, title: title, author: author, isbn: isbn, status: status);
 
   // Ebook(String title, String author, String isbn, this.fileSize,

@@ -8,7 +8,8 @@ class Book extends LibraryItem {
       required String title,
       required String author,
       required String isbn,
-      BookStatus status = BookStatus.tersedia})
+      BookStatus status = BookStatus.tersedia
+      })
   : super(id: id, title: title, author: author, isbn: isbn, status: status);
 
 // Book(String title, String author, String isbn,
