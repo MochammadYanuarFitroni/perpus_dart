@@ -4,14 +4,23 @@ import 'LibraryItem.dart';
 class Ebook extends LibraryItem{
   double fileSize;
 
-  Ebook(String title, String author, String isbn, this.fileSize,
-      {BookStatus status = BookStatus.tersedia})
-      : super(title, author, isbn, status: status);
+  Ebook(
+      {int? id,
+        required String title,
+        required String author,
+        required String isbn,
+        required this.fileSize,
+        BookStatus status = BookStatus.tersedia})
+      : super(id: id, title: title, author: author, isbn: isbn, status: status);
 
-  @override
-  void displayInfoBook() {
-    // TODO: implement displayInfoBook
-    super.displayInfoBook();
-    print('File size: ${fileSize}MB\n');
-  }
+  // Ebook(String title, String author, String isbn, this.fileSize,
+  //     {BookStatus status = BookStatus.tersedia})
+  //     : super(title, author, isbn, status: status);
+  //
+  // @override
+  // void displayInfoBook() {
+  //   // TODO: implement displayInfoBook
+  //   super.displayInfoBook();
+  //   print('File size: ${fileSize}MB\n');
+  // }
 }

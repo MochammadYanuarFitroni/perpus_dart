@@ -1,7 +1,7 @@
 import 'package:perpus_dart/models/LibraryItem.dart';
 
 class Library {
-  List<LibraryItem> items = [];
+  /*List<LibraryItem> items = [];
 
   void addItem(LibraryItem item){
     items.add(item);
@@ -33,5 +33,5 @@ class Library {
         item.displayInfoBook();
       }
     }
-  }
+  }*/
 }

@@ -3,11 +3,11 @@ import 'package:perpus_dart/enums/UserRole.dart';
 import 'package:perpus_dart/models/Book.dart';
 import 'package:perpus_dart/models/Ebook.dart';
 import 'package:perpus_dart/models/User.dart';
-import 'package:perpus_dart/services/Library.dart';
+import 'package:perpus_dart/services/LibraryController.dart';
 
 void main() {
   // print("hello world");
-  Library library = Library();
+  /*Library library = Library();
   List<User> users = [
     User('admin', 'admin123', UserRole.admin),
     User('member', 'member', UserRole.member)
@@ -111,5 +111,5 @@ void main() {
       default:
         print("Invalid option. Please try again.\n");
     }
-  }
+  }*/
 }
