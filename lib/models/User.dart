@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:math';
-import 'package:crypto/crypto.dart';
+import 'package:bcrypt/bcrypt.dart';
 import 'package:perpus_dart/database/database.dart';
 import 'package:perpus_dart/enums/UserRole.dart';
 
@@ -15,6 +15,10 @@ class User {
       required this.username,
       required this.password,
       required this.role});
+
+  static String hashPassword(String password){
+    return BCrypt.hashpw(password, BCrypt.gensalt());
+  }
 
 /*final String username;
   final String password;
